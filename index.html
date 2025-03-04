@@ -1,114 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeph-git</title>
+    <title>Johan Langaas - Portfolio</title>
 
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- BOOTSTRAP JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            padding: 3px;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            transition: color 0.3s;
+            font-size: 1.2rem;
+            margin: 0 0.5rem;
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .project-card .badge {
+            background-color: var(--secondary-color);
+            margin: 2px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
+
 <body>
-
-    <div class="container mt-5">
+    <div class="container py-5">
         <div class="main-body">
-    
-              <div class="row gutters-sm">
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="d-flex flex-column align-items-center text-center">
-                        <img src="static/IMG/portrait.PNG" alt="Admin" class="rounded" width="200" height="300">
-                        <div class="mt-3">
-                          <h4>Johan Langaas</h4>
-                          <p class="text-secondary mb-1">Software Developer</p>
-                          <p class="text-muted font-size-sm">Laksevåg, Bergen</p>
-                          <!-- <button class="btn btn-primary">Follow</button> -->
-                          <!-- <button class="btn btn-outline-primary">Message</button> -->
+            <div class="row gutters-sm">
+                <!-- Left Column -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="static/IMG/portrait.PNG" alt="Profile" class="profile-img mb-3" width="150">
+                            <h2 class="mb-0">Johan Langaas</h2>
+                            <p class="text-secondary mb-3">Software Developer</p>
+                            
+                            <div class="social-links mb-4">
+                                <a href="https://github.com/Jeph-git" target="_blank"><i class="fab fa-github"></i></a>
+                                <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="mailto:langaas.johan@gmail.com" class="btn btn-primary btn-sm"><i class="fas fa-envelope me-2"></i>Contact</a>
+                                <!-- <a href="https://jeph-git.github.io/" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fas fa-globe me-2"></i>Portfolio</a> -->
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="card mt-3">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Website</h6>
-                        <span class="text-secondary">https://jeph-git.github.io/</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github mr-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github</h6>
-                        <span class="text-secondary">Jeph-git</span>
-                      </li>
-   
-    
-                    </ul>
-                  </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card mb-3">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Full Name</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          Johan Henrik Langaas
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Email</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          langaas.johan@gmail.com
-                        </div>
-                      </div>
-                      <hr>
-       
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Mobile</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          +47 953 66 650
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Address</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          Damsgårdsveien 198, 5160 Laksevåg
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="row gutters-sm">
-                    <div class="col-sm mb-3">
-                      <div class="card h-100">
+
+                <!-- Right Column -->
+                <div class="col-lg-8">
+                    <!-- About Section -->
+                    <div class="card mb-4">
                         <div class="card-body">
-                          <h6 class="d-flex align-items-center mb-3">Projects</h6>
-                          <hr>
-                          <p><a href="https://github.com/Jeph-git/Hytte_Prosjekt/">Brøyting</a></p>
-
+                            <h3 class="section-title">About Me</h3>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h6 class="mb-0">Full Name</h6>
+                                </div>
+                                <div class="col-sm-8 text-secondary">
+                                    Johan Henrik Langaas
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h6 class="mb-0">Location</h6>
+                                </div>
+                                <div class="col-sm-8 text-secondary">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Damsgårdsveien 198, 5160 Laksevåg
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h6 class="mb-0">Contact</h6>
+                                </div>
+                                <div class="col-sm-8 text-secondary">
+                                    <i class="fas fa-phone me-2"></i>+47 953 66 650<br>
+                                    <i class="fas fa-envelope me-2"></i>langaas.johan@gmail.com
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
 
-                  </div> 
-    
-    
-    
+                    <!-- Projects Section -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="section-title">Projects</h3>
+                            <div class="row">
+                                <!-- Project 1 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">Plowman Cabin Service</h5>
+                                            <p class="card-text">A snow clearing management system with real-time tracking and scheduling capabilities.</p>
+                                            
+                                            <!-- Subheading for Backend Technologies -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-server me-2"></i>Backend
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">API</span>
+                                                <span class="badge rounded-pill">Flask</span>
+                                                <span class="badge rounded-pill">Javascript</span>
+                                                <span class="badge rounded-pill">Python</span>
+                                            </div>
+
+                                            <!-- Subheading for Frontend Technologies -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-paint-brush me-2"></i>Frontend
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">Bootstrap</span>
+                                                <span class="badge rounded-pill">CSS</span>
+                                                <span class="badge rounded-pill">Sass</span>
+                                            </div>
+
+                                            <!-- Subheading for Database -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-database me-2"></i>Database
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">PostgreSQL</span>
+                                                <span class="badge rounded-pill">SQLAlchemy</span>
+                                            </div>
+
+                                            <!-- Subheading for Deployment -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-rocket me-2"></i>Deployment
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">Vercel</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent">
+                                            <!-- <a href="https://github.com/Jeph-git/Hytte_Prosjekt/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github me-2"></i>View Code</a> -->
+                                            <a href="https://hytte.xn--snbryting-m8ac.net/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 2 -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary">KGK Demo</h5>
+                                            <p class="card-text">A real-time web interface allowing users to modify parameters on a box and instantly see changes, as well as send messages to individual buses.</p>
+                                            
+                                            <!-- Subheading for Backend Technologies -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-server me-2"></i>Backend
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">API</span>
+                                                <span class="badge rounded-pill">Flask</span>
+                                                <span class="badge rounded-pill">Python</span>
+                                                <span class="badge rounded-pill">WebSocket</span>
+                                            </div>
+                                
+                                            <!-- Subheading for Frontend Technologies -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-paint-brush me-2"></i>Frontend
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">Bootstrap</span>
+                                            </div>
+                                
+                                            <!-- Subheading for Database -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-database me-2"></i>Database
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">PostgreSQL</span>
+                                            </div>
+                                
+                                            <!-- Subheading for Deployment -->
+                                            <h6 class="mt-3 mb-2 text-muted">
+                                                <i class="fas fa-rocket me-2"></i>Deployment
+                                            </h6>
+                                            <div class="mb-3">
+                                                <span class="badge rounded-pill">Vercel</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent">
+                                            <a href="https://kgk-v2.vercel.app/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-    
             </div>
         </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
