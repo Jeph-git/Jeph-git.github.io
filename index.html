@@ -1,226 +1,274 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johan Langaas - Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Johan Langaas - Portfolio</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --background-color: #f8f9fa;
-        }
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <style>
+            :root {
+                --primary-color: #2c3e50;
+                --secondary-color: #3498db;
+                --accent-color: #e74c3c;
+                --background-color: #f8f9fa;
+            }
 
-        body {
-            background-color: var(--background-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+            body {
+                background-color: var(--background-color);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
 
-        .card {
-            border: none;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
+            .card {
+                border: none;
+                box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            }
 
-        .profile-img {
-            padding: 3px;
-        }
+            .profile-img {
+                padding: 3px;
+            }
 
-        .social-links a {
-            color: var(--primary-color);
-            transition: color 0.3s;
-            font-size: 1.2rem;
-            margin: 0 0.5rem;
-        }
+            .social-links a {
+                color: var(--primary-color);
+                transition: color 0.3s;
+                font-size: 1.2rem;
+                margin: 0 0.5rem;
+            }
 
-        .social-links a:hover {
-            color: var(--secondary-color);
-        }
+            .social-links a:hover {
+                color: var(--secondary-color);
+            }
 
-        .project-card .badge {
-            background-color: var(--secondary-color);
-            margin: 2px;
-        }
+            .project-card .badge {
+                background-color: var(--secondary-color);
+                margin: 2px;
+            }
 
-        .section-title {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-    </style>
-</head>
+            .section-title {
+                color: var(--primary-color);
+                border-bottom: 2px solid var(--secondary-color);
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
 
-<body>
-    <div class="container py-5">
-        <div class="main-body">
-            <div class="row gutters-sm">
-                <!-- Left Column -->
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="static/IMG/portrait.PNG" alt="Profile" class="profile-img mb-3" width="150">
-                            <h2 class="mb-0">Johan Langaas</h2>
-                            <p class="text-secondary mb-3">Software Developer</p>
-                            
-                            <div class="social-links mb-4">
-                                <a href="https://github.com/Jeph-git" target="_blank"><i class="fab fa-github"></i></a>
-                                <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
-                                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-                            </div>
 
-                            <div class="d-grid gap-2">
-                                <a href="mailto:langaas.johan@gmail.com" class="btn btn-primary btn-sm"><i class="fas fa-envelope me-2"></i>Contact</a>
-                                <!-- <a href="https://jeph-git.github.io/" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fas fa-globe me-2"></i>Portfolio</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </style>
+    </head>
 
-                <!-- Right Column -->
-                <div class="col-lg-8">
-                    <!-- About Section -->
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="section-title">About Me</h3>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <h6 class="mb-0">Full Name</h6>
+    <body>
+        <div class="container py-5">
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <!-- Left Column -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="static/IMG/portrait.PNG" alt="Profile" class="profile-img mb-3" width="150">
+                                <h2 class="mb-0">Johan Langaas</h2>
+                                <p class="text-secondary mb-3">Software Developer</p>
+                                
+                                <div class="social-links mb-4">
+                                    <a href="https://github.com/Jeph-git" target="_blank"><i class="fab fa-github"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                                 </div>
-                                <div class="col-sm-8 text-secondary">
-                                    Johan Henrik Langaas
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <h6 class="mb-0">Location</h6>
-                                </div>
-                                <div class="col-sm-8 text-secondary">
-                                    <i class="fas fa-map-marker-alt me-2"></i>Damsgårdsveien 198, 5160 Laksevåg
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <h6 class="mb-0">Contact</h6>
-                                </div>
-                                <div class="col-sm-8 text-secondary">
-                                    <i class="fas fa-phone me-2"></i>+47 953 66 650<br>
-                                    <i class="fas fa-envelope me-2"></i>langaas.johan@gmail.com
+
+                                <div class="d-grid gap-2">
+                                    <a href="mailto:langaas.johan@gmail.com" class="btn btn-primary btn-sm"><i class="fas fa-envelope me-2"></i>Contact</a>
+                                    <!-- <a href="https://jeph-git.github.io/" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="fas fa-globe me-2"></i>Portfolio</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Projects Section -->
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="section-title">Projects</h3>
-                            <div class="row">
-                                <!-- Project 1 -->
-                                <div class="col-md-6 mb-4">
-                                    <div class="card project-card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-primary">Plowman Cabin Service</h5>
-                                            <p class="card-text">A snow clearing management system with real-time tracking and scheduling capabilities.</p>
-                                            
-                                            <!-- Subheading for Backend Technologies -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-server me-2"></i>Backend
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">API</span>
-                                                <span class="badge rounded-pill">Flask</span>
-                                                <span class="badge rounded-pill">Javascript</span>
-                                                <span class="badge rounded-pill">Python</span>
-                                            </div>
-
-                                            <!-- Subheading for Frontend Technologies -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-paint-brush me-2"></i>Frontend
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">Bootstrap</span>
-                                                <span class="badge rounded-pill">CSS</span>
-                                                <span class="badge rounded-pill">Sass</span>
-                                            </div>
-
-                                            <!-- Subheading for Database -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-database me-2"></i>Database
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">PostgreSQL</span>
-                                                <span class="badge rounded-pill">SQLAlchemy</span>
-                                            </div>
-
-                                            <!-- Subheading for Deployment -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-rocket me-2"></i>Deployment
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">Vercel</span>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer bg-transparent">
-                                            <!-- <a href="https://github.com/Jeph-git/Hytte_Prosjekt/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github me-2"></i>View Code</a> -->
-                                            <a href="https://hytte.xn--snbryting-m8ac.net/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
-                                        </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-8">
+                        <!-- About Section -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="section-title">About Me</h3>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0">Full Name</h6>
+                                    </div>
+                                    <div class="col-sm-8 text-secondary">
+                                        Johan Henrik Langaas
                                     </div>
                                 </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0">Location</h6>
+                                    </div>
+                                    <div class="col-sm-8 text-secondary">
+                                        <i class="fas fa-map-marker-alt me-2"></i>Damsgårdsveien 198, 5160 Laksevåg
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0">Contact</h6>
+                                    </div>
+                                    <div class="col-sm-8 text-secondary">
+                                        <i class="fas fa-phone me-2"></i>+47 953 66 650<br>
+                                        <i class="fas fa-envelope me-2"></i>langaas.johan@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                <!-- Project 2 -->
-                                <div class="col-md-6 mb-4">
-                                    <div class="card project-card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-primary">KGK Demo</h5>
-                                            <p class="card-text">A real-time web interface allowing users to modify parameters on a box and instantly see changes, as well as send messages to individual buses.</p>
-                                            
-                                            <!-- Subheading for Backend Technologies -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-server me-2"></i>Backend
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">API</span>
-                                                <span class="badge rounded-pill">Flask</span>
-                                                <span class="badge rounded-pill">Python</span>
-                                                <span class="badge rounded-pill">WebSocket</span>
+                        <!-- Projects Section -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="section-title">Projects</h3>
+                                <div class="row">
+                                    <!-- Project 1 -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="card project-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary">Plowman Cabin Service</h5>
+                                                <p class="card-text">A snow clearing management system with real-time tracking and scheduling capabilities.</p>
+                                                
+                                                <!-- Subheading for Backend Technologies -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-server me-2"></i>Backend
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">API</span>
+                                                    <span class="badge rounded-pill">Flask</span>
+                                                    <span class="badge rounded-pill">Javascript</span>
+                                                    <span class="badge rounded-pill">Python</span>
+                                                </div>
+
+                                                <!-- Subheading for Frontend Technologies -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-paint-brush me-2"></i>Frontend
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">Bootstrap</span>
+                                                    <span class="badge rounded-pill">CSS</span>
+                                                    <span class="badge rounded-pill">Figma</span>
+                                                    <span class="badge rounded-pill">Sass</span>
+                                                </div>
+
+                                                <!-- Subheading for Database -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-database me-2"></i>Database
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">PostgreSQL</span>
+                                                    <span class="badge rounded-pill">SQLAlchemy</span>
+                                                </div>
+
+                                                <!-- Subheading for Deployment -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-rocket me-2"></i>Deployment
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">Vercel</span>
+                                                </div>
                                             </div>
-                                
-                                            <!-- Subheading for Frontend Technologies -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-paint-brush me-2"></i>Frontend
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">Bootstrap</span>
-                                            </div>
-                                
-                                            <!-- Subheading for Database -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-database me-2"></i>Database
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">PostgreSQL</span>
-                                            </div>
-                                
-                                            <!-- Subheading for Deployment -->
-                                            <h6 class="mt-3 mb-2 text-muted">
-                                                <i class="fas fa-rocket me-2"></i>Deployment
-                                            </h6>
-                                            <div class="mb-3">
-                                                <span class="badge rounded-pill">Vercel</span>
+                                            <div class="card-footer bg-transparent">
+                                                <!-- <a href="https://github.com/Jeph-git/Hytte_Prosjekt/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github me-2"></i>View Code</a> -->
+                                                <a href="https://hytte.xn--snbryting-m8ac.net/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
+                                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#project1Modal"><i class="fa-solid fa-image me-2"></i>View photos</button>
                                             </div>
                                         </div>
-                                        <div class="card-footer bg-transparent">
-                                            <a href="https://kgk-v2.vercel.app/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
+                                    </div>
+
+                                    <!-- PHOTO MODAL -->
+                                    <!-- Project 1 Modal -->
+                                    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="project1ModalLabel">Plowman Cabin Service Screenshots</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="static/IMG/orders.png" class="d-block w-100" alt="Project 1 Screenshot 1">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="static/IMG/calendar.png" class="d-block w-20" alt="Project 1 Screenshot 2">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="static/IMG/map_overview.png" class="d-block w-100" alt="Project 1 Screenshot 3">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="static/IMG/map_pin.png" class="d-block w-100" alt="Project 1 Screenshot 3">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Project 2 -->
+                                    <div class="col-md-6 mb-4">
+                                        <div class="card project-card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary">KGK Demo</h5>
+                                                <p class="card-text">A real-time web interface allowing users to modify parameters on a box and instantly see changes, as well as send messages to individual buses.</p>
+                                                
+                                                <!-- Subheading for Backend Technologies -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-server me-2"></i>Backend
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">API</span>
+                                                    <span class="badge rounded-pill">Flask</span>
+                                                    <span class="badge rounded-pill">Python</span>
+                                                    <span class="badge rounded-pill">WebSocket</span>
+                                                </div>
+                                    
+                                                <!-- Subheading for Frontend Technologies -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-paint-brush me-2"></i>Frontend
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">Bootstrap</span>
+                                                    <span class="badge rounded-pill">Figma</span>
+                                                </div>
+                                    
+                                                <!-- Subheading for Database -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-database me-2"></i>Database
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">PostgreSQL</span>
+                                                </div>
+                                    
+                                                <!-- Subheading for Deployment -->
+                                                <h6 class="mt-3 mb-2 text-muted">
+                                                    <i class="fas fa-rocket me-2"></i>Deployment
+                                                </h6>
+                                                <div class="mb-3">
+                                                    <span class="badge rounded-pill">Vercel</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <a href="https://kgk-v2.vercel.app/" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fas fa-external-link-alt me-2"></i>View website</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -230,9 +278,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
